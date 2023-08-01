@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Show and Hide Navbar</title>
+  </head>
+  <!-- adding the css -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      outline: 0;
+      box-sizing: border-box;
+    }
+    nav {
+      height: 15vh;
+      background-color: rgb(194, 194, 194);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.5s ease-in-out;
+      opacity: 1;
+    }
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+      font-size: 20px;
+      list-style: none;
+    }
+    button {
+      padding: 10px 25px;
+      font-size: 20px;
+      margin-top: 30px;
+    }
+    /* class for navbar show and hide */
+    .hide_and_show {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+  </style>
+  <body>
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+    <!-- button to show and hide navbar (like menu button in mobile view) -->
+    <button>Toggle</button>
+  </body>
+  <!-- adding the javascript -->
+  <script>
+    const navbar = document.querySelector("nav");
+    const toggleBtn = document.querySelector("button");
+    toggleBtn.addEventListener("click", () => {
+      navbar.classList.toggle("hide_and_show");
+    });
+  </script>
+</html>
