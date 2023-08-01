@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cookie_container {
+  width: 300px;
+  background: linear-gradient(90deg, rgb(77, 4, 4), rgba(116, 8, 8, 0.63));
+  padding: 15px 25px;
+  border-radius: 20px;
+  display: flex;
+  gap: 35px;
+  color: white;
+}
+
+.cookie_container img {
+  margin-top: 25px;
+  width: 40px;
+  height: 40px;
+  opacity: 0;
+}
+
+/* for starting animation */
+.animateTextFromLeft {
+  animation: animateTextFromLeft 0.5s normal;
+}
+
+/* for bouncing animation */
+.bounceImg {
+  animation: bounceEffect 1.5s infinite;
+}
+
+.cookie_container_right {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  opacity: 0;
+}
+
+.cookie_container_right h1 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.cookie_container_right p {
+  font-size: 14px;
+}
+
+.cookie_container_right button {
+  width: fit-content;
+  font-weight: bold;
+  border: none;
+  color: rgb(77, 4, 4);
+  background-color: rgb(216, 216, 216);
+  border-radius: 15px;
+  padding: 5px 10px;
+}
+
+/* animation for the cookie container */
+@keyframes animateContainer {
+  0% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* animation for bounce effect */
+@keyframes bounceEffect {
+  0% {
+    transform: translateY(0px) rotate(0);
+  }
+  50% {
+    transform: translateY(-25px) rotate(-20deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+/* animation for text to come from right side */
+@keyframes animateTextFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* animation for the cookie image from left side */
+@keyframes animateTextFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
