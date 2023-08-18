@@ -1,0 +1,172 @@
+/* css reset */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+.polyfillContainer {
+  height: 350px;
+  width: 100%;
+  /* background-color: gray; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.polyfillText {
+  text-align: center;
+  font-weight: bold;
+}
+
+.polyfillText h1 {
+  font-size: 40px;
+}
+
+.polyfillText p {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.polyfillGrid {
+  width: 100%;
+  height: 350px;
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  gap: 1px;
+}
+
+.polyfillGridItem {
+  width: 100%;
+  background-color: #cccccc;
+  position: relative;
+}
+
+.polyfillGridItemColored {
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+  background-color: #44a6c9;
+}
+
+/* adding the animation */
+.polyfillGridItem:nth-child(1):hover .polyfillGridItemColored {
+  height: 100%;
+}
+.polyfillGridItem:nth-child(1):not(:hover) .polyfillGridItemColored {
+  height: 10%;
+}
+.polyfillGridItem:nth-child(2):hover .polyfillGridItemColored {
+  height: 100%;
+}
+.polyfillGridItem:nth-child(2):not(:hover) .polyfillGridItemColored {
+  height: 20%;
+}
+.polyfillGridItem:nth-child(3):hover .polyfillGridItemColored {
+  height: 100%;
+}
+.polyfillGridItem:nth-child(3):not(:hover) .polyfillGridItemColored {
+  height: 30%;
+}
+.polyfillGridItem:nth-child(4):hover .polyfillGridItemColored {
+  height: 100%;
+}
+.polyfillGridItem:nth-child(4):not(:hover) .polyfillGridItemColored {
+  height: 50%;
+}
+.polyfillGridItem:nth-child(5):hover .polyfillGridItemColored {
+  height: 100%;
+}
+.polyfillGridItem:nth-child(5):not(:hover) .polyfillGridItemColored {
+  height: 60%;
+}
+.polyfillGridItem:nth-child(6):hover .polyfillGridItemColored {
+  height: 100%;
+}
+.polyfillGridItem:nth-child(6):not(:hover) .polyfillGridItemColored {
+  height: 60%;
+}
+.polyfillGridItem:nth-child(7):hover .polyfillGridItemColored {
+  height: 100%;
+}
+.polyfillGridItem:nth-child(7):not(:hover) .polyfillGridItemColored {
+  height: 35%;
+}
+.polyfillGridItem:nth-child(8):hover .polyfillGridItemColored {
+  height: 100%;
+}
+.polyfillGridItem:nth-child(8):not(:hover) .polyfillGridItemColored {
+  height: 75%;
+}
+.polyfillGridItem:nth-child(9):hover .polyfillGridItemColored {
+  height: 100%;
+}
+.polyfillGridItem:nth-child(9):not(:hover) .polyfillGridItemColored {
+  height: 10%;
+}
+.polyfillGridItem:nth-child(10):hover .polyfillGridItemColored {
+  height: 100%;
+}
+.polyfillGridItem:nth-child(10):not(:hover) .polyfillGridItemColored {
+  height: 25%;
+}
+.polyfillGridItem:nth-child(11):hover .polyfillGridItemColored {
+  height: 100%;
+}
+.polyfillGridItem:nth-child(11):not(:hover) .polyfillGridItemColored {
+  height: 30%;
+}
+.polyfillGridItem:nth-child(12):hover .polyfillGridItemColored {
+  height: 100%;
+}
+.polyfillGridItem:nth-child(12):not(:hover) .polyfillGridItemColored {
+  height: 70%;
+}
+.polyfillGridItem:nth-child(13):hover .polyfillGridItemColored {
+  height: 100%;
+}
+.polyfillGridItem:nth-child(13):not(:hover) .polyfillGridItemColored {
+  height: 50%;
+}
+.polyfillGridItem:nth-child(14):hover .polyfillGridItemColored {
+  height: 100%;
+}
+.polyfillGridItem:nth-child(14):not(:hover) .polyfillGridItemColored {
+  height: 20%;
+}
+.polyfillGridItem:nth-child(15):hover .polyfillGridItemColored {
+  height: 100%;
+}
+.polyfillGridItem:nth-child(15):not(:hover) .polyfillGridItemColored {
+  height: 60%;
+}
+.polyfillGridItem:nth-child(16):hover .polyfillGridItemColored {
+  height: 100%;
+}
+.polyfillGridItem:nth-child(16):not(:hover) .polyfillGridItemColored {
+  height: 85%;
+}
+.polyfillGridItem:nth-child(17):hover .polyfillGridItemColored {
+  height: 100%;
+}
+.polyfillGridItem:nth-child(17):not(:hover) .polyfillGridItemColored {
+  height: 70%;
+}
+.polyfillGridItem:nth-child(18):hover .polyfillGridItemColored {
+  height: 100%;
+}
+.polyfillGridItem:nth-child(18):not(:hover) .polyfillGridItemColored {
+  height: 50%;
+}
+.polyfillGridItem:nth-child(19):hover .polyfillGridItemColored {
+  height: 100%;
+}
+.polyfillGridItem:nth-child(19):not(:hover) .polyfillGridItemColored {
+  height: 30%;
+}
+.polyfillGridItem:nth-child(20):hover .polyfillGridItemColored {
+  height: 100%;
+}
+.polyfillGridItem:nth-child(20):not(:hover) .polyfillGridItemColored {
+  height: 10%;
+}
