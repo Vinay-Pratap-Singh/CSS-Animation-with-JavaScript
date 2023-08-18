@@ -45,128 +45,467 @@
 
 .polyfillGridItemColored {
   width: 100%;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.8s ease-in-out;
   background-color: #44a6c9;
 }
 
 /* adding the animation */
 .polyfillGridItem:nth-child(1):hover .polyfillGridItemColored {
-  height: 100%;
+  animation: 0.8s animatein1 forwards;
 }
 .polyfillGridItem:nth-child(1):not(:hover) .polyfillGridItemColored {
-  height: 10%;
+  animation: 0.8s animateout1 forwards;
 }
+@keyframes animatein1 {
+  0% {
+    height: 10%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+@keyframes animateout1 {
+  100% {
+    height: 10%;
+  }
+  0% {
+    height: 100%;
+  }
+}
+
 .polyfillGridItem:nth-child(2):hover .polyfillGridItemColored {
-  height: 100%;
+  animation: 0.8s animatein2 forwards;
 }
 .polyfillGridItem:nth-child(2):not(:hover) .polyfillGridItemColored {
-  height: 20%;
+  animation: 0.8s animateout2 forwards;
 }
+@keyframes animatein2 {
+  0% {
+    height: 20%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+@keyframes animateout2 {
+  100% {
+    height: 20%;
+  }
+  0% {
+    height: 100%;
+  }
+}
+
 .polyfillGridItem:nth-child(3):hover .polyfillGridItemColored {
-  height: 100%;
+  animation: 0.8s animatein3 forwards;
 }
 .polyfillGridItem:nth-child(3):not(:hover) .polyfillGridItemColored {
-  height: 30%;
+  animation: 0.8s animateout3 forwards;
 }
+@keyframes animatein3 {
+  0% {
+    height: 30%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+@keyframes animateout3 {
+  100% {
+    height: 30%;
+  }
+  0% {
+    height: 100%;
+  }
+}
+
 .polyfillGridItem:nth-child(4):hover .polyfillGridItemColored {
-  height: 100%;
+  animation: 0.8s animatein4 forwards;
 }
 .polyfillGridItem:nth-child(4):not(:hover) .polyfillGridItemColored {
-  height: 50%;
+  animation: 0.8s animateout4 forwards;
 }
+@keyframes animatein4 {
+  0% {
+    height: 50%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+@keyframes animateout4 {
+  100% {
+    height: 50%;
+  }
+  0% {
+    height: 100%;
+  }
+}
+
 .polyfillGridItem:nth-child(5):hover .polyfillGridItemColored {
-  height: 100%;
+  animation: 0.8s animatein5 forwards;
 }
 .polyfillGridItem:nth-child(5):not(:hover) .polyfillGridItemColored {
-  height: 60%;
+  animation: 0.8s animateout5 forwards;
 }
+@keyframes animatein5 {
+  0% {
+    height: 60%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+@keyframes animateout5 {
+  100% {
+    height: 60%;
+  }
+  0% {
+    height: 100%;
+  }
+}
+
 .polyfillGridItem:nth-child(6):hover .polyfillGridItemColored {
-  height: 100%;
+  animation: 0.8s animatein6 forwards;
 }
 .polyfillGridItem:nth-child(6):not(:hover) .polyfillGridItemColored {
-  height: 60%;
+  animation: 0.8s animateout6 forwards;
 }
+@keyframes animatein6 {
+  0% {
+    height: 60%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+@keyframes animateout6 {
+  100% {
+    height: 60%;
+  }
+  0% {
+    height: 100%;
+  }
+}
+
 .polyfillGridItem:nth-child(7):hover .polyfillGridItemColored {
-  height: 100%;
+  animation: 0.8s animatein7 forwards;
 }
 .polyfillGridItem:nth-child(7):not(:hover) .polyfillGridItemColored {
-  height: 35%;
+  animation: 0.8s animateout7 forwards;
 }
+@keyframes animatein7 {
+  0% {
+    height: 35%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+@keyframes animateout7 {
+  100% {
+    height: 35%;
+  }
+  0% {
+    height: 100%;
+  }
+}
+
 .polyfillGridItem:nth-child(8):hover .polyfillGridItemColored {
-  height: 100%;
+  animation: 0.8s animatein8 forwards;
 }
 .polyfillGridItem:nth-child(8):not(:hover) .polyfillGridItemColored {
-  height: 75%;
+  animation: 0.8s animateout8 forwards;
 }
+@keyframes animatein8 {
+  0% {
+    height: 75%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+@keyframes animateout8 {
+  100% {
+    height: 75%;
+  }
+  0% {
+    height: 100%;
+  }
+}
+
 .polyfillGridItem:nth-child(9):hover .polyfillGridItemColored {
-  height: 100%;
+  animation: 0.8s animatein9 forwards;
 }
 .polyfillGridItem:nth-child(9):not(:hover) .polyfillGridItemColored {
-  height: 10%;
+  animation: 0.8s animateout9 forwards;
 }
+@keyframes animatein9 {
+  0% {
+    height: 10%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+@keyframes animateout9 {
+  100% {
+    height: 10%;
+  }
+  0% {
+    height: 100%;
+  }
+}
+
 .polyfillGridItem:nth-child(10):hover .polyfillGridItemColored {
-  height: 100%;
+  animation: 0.8s animatein10 forwards;
 }
 .polyfillGridItem:nth-child(10):not(:hover) .polyfillGridItemColored {
-  height: 25%;
+  animation: 0.8s animateout10 forwards;
 }
+@keyframes animatein10 {
+  0% {
+    height: 25%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+@keyframes animateout10 {
+  100% {
+    height: 25%;
+  }
+  0% {
+    height: 100%;
+  }
+}
+
 .polyfillGridItem:nth-child(11):hover .polyfillGridItemColored {
-  height: 100%;
+  animation: 0.8s animatein11 forwards;
 }
 .polyfillGridItem:nth-child(11):not(:hover) .polyfillGridItemColored {
-  height: 30%;
+  animation: 0.8s animateout11 forwards;
 }
+@keyframes animatein11 {
+  0% {
+    height: 30%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+@keyframes animateout11 {
+  100% {
+    height: 30%;
+  }
+  0% {
+    height: 100%;
+  }
+}
+
 .polyfillGridItem:nth-child(12):hover .polyfillGridItemColored {
-  height: 100%;
+  animation: 0.8s animatein12 forwards;
 }
 .polyfillGridItem:nth-child(12):not(:hover) .polyfillGridItemColored {
-  height: 70%;
+  animation: 0.8s animateout12 forwards;
 }
+@keyframes animatein12 {
+  0% {
+    height: 70%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+@keyframes animateout12 {
+  100% {
+    height: 70%;
+  }
+  0% {
+    height: 100%;
+  }
+}
+
 .polyfillGridItem:nth-child(13):hover .polyfillGridItemColored {
-  height: 100%;
+  animation: 0.8s animatein13 forwards;
 }
 .polyfillGridItem:nth-child(13):not(:hover) .polyfillGridItemColored {
-  height: 50%;
+  animation: 0.8s animateout13 forwards;
 }
+@keyframes animatein13 {
+  0% {
+    height: 50%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+@keyframes animateout13 {
+  100% {
+    height: 50%;
+  }
+  0% {
+    height: 100%;
+  }
+}
+
 .polyfillGridItem:nth-child(14):hover .polyfillGridItemColored {
-  height: 100%;
+  animation: 0.8s animatein14 forwards;
 }
 .polyfillGridItem:nth-child(14):not(:hover) .polyfillGridItemColored {
-  height: 20%;
+  animation: 0.8s animateout14 forwards;
 }
+@keyframes animatein14 {
+  0% {
+    height: 20%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+@keyframes animateout14 {
+  100% {
+    height: 20%;
+  }
+  0% {
+    height: 100%;
+  }
+}
+
 .polyfillGridItem:nth-child(15):hover .polyfillGridItemColored {
-  height: 100%;
+  animation: 0.8s animatein15 forwards;
 }
 .polyfillGridItem:nth-child(15):not(:hover) .polyfillGridItemColored {
-  height: 60%;
+  animation: 0.8s animateout15 forwards;
 }
+@keyframes animatein15 {
+  0% {
+    height: 60%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+@keyframes animateout15 {
+  100% {
+    height: 60%;
+  }
+  0% {
+    height: 100%;
+  }
+}
+
 .polyfillGridItem:nth-child(16):hover .polyfillGridItemColored {
-  height: 100%;
+  animation: 0.8s animatein16 forwards;
 }
 .polyfillGridItem:nth-child(16):not(:hover) .polyfillGridItemColored {
-  height: 85%;
+  animation: 0.8s animateout16 forwards;
 }
+@keyframes animatein16 {
+  0% {
+    height: 85%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+@keyframes animateout16 {
+  100% {
+    height: 85%;
+  }
+  0% {
+    height: 100%;
+  }
+}
+
 .polyfillGridItem:nth-child(17):hover .polyfillGridItemColored {
-  height: 100%;
+  animation: 0.8s animatein17 forwards;
 }
 .polyfillGridItem:nth-child(17):not(:hover) .polyfillGridItemColored {
-  height: 70%;
+  animation: 0.8s animateout17 forwards;
 }
+@keyframes animatein17 {
+  0% {
+    height: 70%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+@keyframes animateout17 {
+  100% {
+    height: 70%;
+  }
+  0% {
+    height: 100%;
+  }
+}
+
 .polyfillGridItem:nth-child(18):hover .polyfillGridItemColored {
-  height: 100%;
+  animation: 0.8s animatein18 forwards;
 }
 .polyfillGridItem:nth-child(18):not(:hover) .polyfillGridItemColored {
-  height: 50%;
+  animation: 0.8s animateout18 forwards;
 }
+@keyframes animatein18 {
+  0% {
+    height: 50%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+@keyframes animateout18 {
+  100% {
+    height: 50%;
+  }
+  0% {
+    height: 100%;
+  }
+}
+
 .polyfillGridItem:nth-child(19):hover .polyfillGridItemColored {
-  height: 100%;
+  animation: 0.8s animatein19 forwards;
 }
 .polyfillGridItem:nth-child(19):not(:hover) .polyfillGridItemColored {
-  height: 30%;
+  animation: 0.8s animateout19 forwards;
 }
+@keyframes animatein19 {
+  0% {
+    height: 30%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+@keyframes animateout19 {
+  100% {
+    height: 30%;
+  }
+  0% {
+    height: 100%;
+  }
+}
+
 .polyfillGridItem:nth-child(20):hover .polyfillGridItemColored {
-  height: 100%;
+  animation: 0.8s animatein20 forwards;
 }
 .polyfillGridItem:nth-child(20):not(:hover) .polyfillGridItemColored {
-  height: 10%;
+  animation: 0.8s animateout20 forwards;
+}
+@keyframes animatein20 {
+  0% {
+    height: 10%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+@keyframes animateout20 {
+  100% {
+    height: 10%;
+  }
+  0% {
+    height: 100%;
+  }
 }
