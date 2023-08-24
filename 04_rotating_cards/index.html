@@ -12,7 +12,7 @@
     <!-- container for cards -->
     <main class="container">
       <!-- login card -->
-      <div class="card login">
+      <div class="card login front">
         <h2>Login to your account</h2>
         <label for="email">
           <input type="email" placeholder="test@gmail.com" />
@@ -26,7 +26,7 @@
       </div>
 
       <!-- signup card -->
-      <div class="card signup go_behind">
+      <div class="card signup back">
         <h2>Create your account</h2>
         <label for="name">
           <input type="text" placeholder="test" />
@@ -53,12 +53,16 @@
     const login = document.querySelector(".login");
 
     createButton.addEventListener("click", () => {
-      signup.classList.toggle("go_behind");
-      login.classList.toggle("go_behind");
+      signup.classList.remove("back");
+      signup.classList.add("front");
+      login.classList.remove("front");
+      login.classList.add("back");
     });
     loginButton.addEventListener("click", () => {
-      signup.classList.toggle("go_behind");
-      login.classList.toggle("go_behind");
+      login.classList.remove("back");
+      login.classList.add("front");
+      signup.classList.remove("front");
+      signup.classList.add("back");
     });
   </script>
 </html>

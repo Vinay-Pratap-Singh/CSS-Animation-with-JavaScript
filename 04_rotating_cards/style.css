@@ -33,7 +33,6 @@ body {
   justify-content: center;
   gap: 5px;
   background-color: white;
-  animation: 2s animate normal;
 }
 
 .card h2 {
@@ -58,22 +57,44 @@ body {
   cursor: pointer;
 }
 
-.go_behind {
+.front {
+  background-color: lightblue;
+  position: relative;
+
+  animation: 1.5s animate forwards;
+}
+
+.back {
+  background-color: lightcoral;
   position: absolute;
-  z-index: -1;
-  transform: rotate(7deg);
+
   padding: 0 20px;
-  /* animation: 1s animate forwards; */
+  transform: rotate(10deg);
+  animation: 2s animate2 forwards;
 }
 
 @keyframes animate {
   0% {
-    transform: translateX("0px");
+    transform: translateX(0px) rotate(10deg);
   }
   50% {
-    transform: translateX("100px");
+    transform: translateX(-300px);
   }
   100% {
-    transform: translateX("0px");
+    transform: translateX(0px) rotate(0);
+    z-index: 1;
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    transform: translateX(0px) rotate(0);
+  }
+  50% {
+    transform: translateX(300px);
+  }
+  100% {
+    transform: translateX(0px) rotate(10deg);
+    z-index: -1;
   }
 }
