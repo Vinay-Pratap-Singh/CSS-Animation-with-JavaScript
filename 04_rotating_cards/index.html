@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rotating Cards</title>
+    <!-- adding the css file -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <!-- container for cards -->
+    <main class="container">
+      <!-- login card -->
+      <div class="card login">
+        <h2>Login to your account</h2>
+        <label for="email">
+          <input type="email" placeholder="test@gmail.com" />
+        </label>
+        <label for="password">
+          <input type="password" placeholder="test@123" />
+        </label>
+        <p>Forget password ?</p>
+        <button>Login</button>
+        <p>Join with us <span id="create">Create account</span></p>
+      </div>
+
+      <!-- signup card -->
+      <div class="card signup go_behind">
+        <h2>Create your account</h2>
+        <label for="name">
+          <input type="text" placeholder="test" />
+        </label>
+        <label for="phone">
+          <input type="text" placeholder="9874563210" />
+        </label>
+        <label for="email">
+          <input type="email" placeholder="test@gmail.com" />
+        </label>
+        <label for="password">
+          <input type="password" placeholder="test@123" />
+        </label>
+        <button>Signup</button>
+        <p>Already have an account? <span id="login">Login</span></p>
+      </div>
+    </main>
+  </body>
+
+  <script>
+    const createButton = document.querySelector("#create");
+    const loginButton = document.querySelector("#login");
+    const signup = document.querySelector(".signup");
+    const login = document.querySelector(".login");
+
+    createButton.addEventListener("click", () => {
+      signup.classList.toggle("go_behind");
+      login.classList.toggle("go_behind");
+    });
+    loginButton.addEventListener("click", () => {
+      signup.classList.toggle("go_behind");
+      login.classList.toggle("go_behind");
+    });
+  </script>
+</html>
